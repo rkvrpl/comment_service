@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/icon.svg" type="image/svg">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Сервис комментариев</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1 class="header__title">Сервис комментариев со спам фильтром</h1>
+        </header>
+        <section class="comment">
+            <h2 class="title">Оставьте ваш комментарий</h2>
+            <form class="form">
+                <div class="form__section">
+                    <label for="name">Введите ваше имя:</label><br />
+                    <input id="name" type="text" />
+                </div> 
+                <div class="form__section">  
+                    <label for="foto">Введите ссылку на ваш аватар:</label><br />
+                    <input id="foto" type="url" />
+                </div>
+                <div class="form__section">
+                    <label>Оставьте комментарий:</label><br />
+                    <textarea id="message"  name="comment" placeholder="Расскажите обо всём, что для вас важно" cols="30" rows="10"></textarea>
+                </div> 
+                <div class="form__section">
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </section>
+        <section class="chat">
+            <h2 class="title">Чат</h2>
+            <div id="result"></div>
+        </section>
+    </main>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
