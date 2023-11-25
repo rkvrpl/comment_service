@@ -17,24 +17,24 @@
             <form class="form">
                 <div class="form__section">
                     <label for="name">Введите ваше имя:</label><br />
-                    <input id="name" type="text" />
+                    <input id="userName" name="name" type="text" />
                 </div> 
                 <div class="form__section">  
                     <label for="foto">Введите ссылку на ваш аватар:</label><br />
-                    <input id="foto" type="url" />
+                    <input id="foto" name="foto" type="url" />
                 </div>
                 <div class="form__section">
-                    <label>Оставьте комментарий:</label><br />
+                    <label for="comment">Оставьте комментарий:</label><br />
                     <textarea id="message"  name="comment" placeholder="Расскажите обо всём, что для вас важно" cols="30" rows="10"></textarea>
                 </div> 
                 <div class="form__section">
-                    <button type="submit">Отправить</button>
+                    <button id="button" type="submit">Отправить</button>
                 </div>
             </form>
         </section>
         <section class="chat">
             <h2 class="title">Чат</h2>
-            <div id="result"></div>
+            <div id="result">Здесь появится ваш комментарий</div>
         </section>
     </main>
     <script src="./assets/scripts/script.js"></script>
