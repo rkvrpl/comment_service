@@ -1,18 +1,26 @@
 "use strict"
 
-const userName = document.querySelector('#userName');
-const foto = document.querySelector('#foto');
-const message = document.querySelector('#message');
-const button = document.querySelector('#button');
-const result = document.querySelector('#result');
+const userName = document.getElementById('userName');
+const foto = document.getElementById('foto');
+const message = document.getElementById('message');
+const button = document.getElementById('button');
+const resultName = document.getElementById('resultName');
+const resultImg = document.getElementById('resultImg');
+const resultComment = document.getElementById('resultComment');
 
 const addTextOnChat = () =>{
-    const trimmedName = userName.trim();
-    const toUpperCaseName = trimmedName.toUpperCase();
-    const correctName = toUpperCaseName.replace(name[0], name[0].toUpperCase());
+    const trimmedName = userName.value.trim();
+    const toLowerCaseName = trimmedName.toLowerCase();
+    const correctName = toLowerCaseName.replace(toLowerCaseName[0], toLowerCaseName[0].toUpperCase());
 
-    result.textContent = correctName; 
+    function checkSpam(message) {
+        let lowerMessage = message.toLowerCase();
+        return lowerMessage.includes('viagra') || lowerMessage.includes('xxx');
+    }
 
+    resultName.textContent = correctName.value; 
+    resultImg.setAttribute('src', 'foto');
+    resultComment.textContent = checkSpam(message);
 };
 
 button.addEventListener('click', addTextOnChat);

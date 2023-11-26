@@ -1,6 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-/* font-family: 'Amatic SC', sans-serif;  bold */
+
+
 body{
     font-family: 'Amatic SC', sans-serif; 
-    /* font-weight: bold; */
+    background-color: azure;
+}
+.header {
+    text-align: center;
+}
+.header__title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form__window{
+    border: 2px solid #eee;
+    background-color: #f0e7e79d;
+    color: #cc3291;
+    resize: vertical;
+    border-radius:10px;
+    padding: 1rem;
+}
+.title {
+    font-size: 2rem;
+}
+.form {
+    font-size: 1.5rem;
+}
+.form__section {
+    margin-bottom: 2rem;
+}
+#button{
+    padding: 10px;
+    border: none;
+    background-color: #cc3291;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px;
+    width: 100%;
+}
+.chat {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.chat__name {
+    margin-top: 1rem;
+}
+.chat__img {
+    margin-top: 1rem;
+}
+.chat__comment {
+    margin-top: 1rem;
 }

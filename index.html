@@ -12,30 +12,34 @@
         <header class="header">
             <h1 class="header__title">Сервис комментариев со спам фильтром</h1>
         </header>
-        <section class="comment">
-            <h2 class="title">Оставьте ваш комментарий</h2>
-            <form class="form">
-                <div class="form__section">
-                    <label for="name">Введите ваше имя:</label><br />
-                    <input id="userName" name="name" type="text" />
-                </div> 
-                <div class="form__section">  
-                    <label for="foto">Введите ссылку на ваш аватар:</label><br />
-                    <input id="foto" name="foto" type="url" />
-                </div>
-                <div class="form__section">
-                    <label for="comment">Оставьте комментарий:</label><br />
-                    <textarea id="message"  name="comment" placeholder="Расскажите обо всём, что для вас важно" cols="30" rows="10"></textarea>
-                </div> 
-                <div class="form__section">
-                    <button id="button" type="submit">Отправить</button>
-                </div>
-            </form>
-        </section>
-        <section class="chat">
-            <h2 class="title">Чат</h2>
-            <div id="result">Здесь появится ваш комментарий</div>
-        </section>
+        <div class="conteiner">
+            <section>
+                <h2 class="title">Оставьте ваш комментарий</h2>
+                <form class="form">
+                    <div class="form__section">
+                        <label for="userName">Введите ваше имя:</label><br />
+                        <input class="form__window" id="userName" name="name" type="text" autocomplete="off"/>
+                    </div> 
+                    <div class="form__section">  
+                        <label for="foto">Введите ссылку на ваш аватар:</label><br />
+                        <input class="form__window" id="foto" name="foto" type="url" autocomplete="off"/>
+                    </div>
+                    <div class="form__section">
+                        <label for="comment">Оставьте комментарий:</label><br />
+                        <textarea class="form__window" id="comment"  name="comment" placeholder="Расскажите обо всём, что для вас важно" cols="30" rows="10"></textarea>
+                    </div> 
+                    <div class="form__section">
+                        <button id="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </section>
+            <section class="chat">
+                <h2 class="title">Чат</h2>
+                <p class="chat__name" id="resultName"></p>
+                <img class="chat__img" id="resultImg" src=""/>
+                <div class="chat__comment" id="resultComment">Здесь появится ваш комментарий</div>
+            </section>
+        </div>    
     </main>
     <script src="./assets/scripts/script.js"></script>
 </body>
