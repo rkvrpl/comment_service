@@ -13,21 +13,19 @@ const addTextOnChat = () =>{
     const toLowerCaseName = trimmedName.toLowerCase();
     const correctName = toLowerCaseName.replace(toLowerCaseName[0], toLowerCaseName[0].toUpperCase());
 
-    // const correctFoto = foto.value;
+    const correctFoto = foto.value;
 
+    function checkSpam(comment) {
+        let lowerСomment = comment.toLowerCase();
+        return lowerСomment.includes('viagra') || lowerСommente.includes('xxx');
+    }
     const toLowerCaseСomment = comment.value.toLowerCase();
-    console.log(toLowerCaseСomment);
     const correctСomment = toLowerCaseСomment.replace(toLowerCaseСomment[0], toLowerCaseСomment[0].toUpperCase());
-    console.log(correctСomment);
-
-    // function checkSpam(correctСomment) {
-    //     let lowerСomment = correctСomment.toLowerCase();
-    //     return lowerСomment.includes('viagra') || lowerСommente.includes('xxx');
-    // }
+    const checkSpamComment = checkSpam(correctСomment);
 
     resultName.textContent = correctName; 
-    // resultImg.setAttribute('src', correctFoto);
-    resultComment.textContent = correctСomment;
+    resultImg.elem.setAttribute('src', 'correctFoto'); 
+    resultComment.textContent = checkSpamComment;
 };
 
 button.addEventListener('click', addTextOnChat);
