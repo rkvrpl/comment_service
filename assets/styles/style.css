@@ -53,6 +53,7 @@ body{
 }
 .chat__img {
     margin-top: 1rem;
+    max-width: 200px;
 }
 .chat__comment {
     margin-top: 1rem;

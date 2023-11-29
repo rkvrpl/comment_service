@@ -16,8 +16,8 @@ const addTextOnChat = () =>{
     const correctFoto = foto.value;
 
     function checkSpam(comment) {
-        let lowerСomment = comment.toLowerCase();
-        return lowerСomment.includes('viagra') || lowerСommente.includes('xxx');
+        const correctСomment = comment.replace(/viagra/gi, "***") || comment.replace(/xxx/gi, "***");
+        return correctСomment;
     }
     const toLowerCaseСomment = comment.value.toLowerCase();
     const correctСomment = toLowerCaseСomment.replace(toLowerCaseСomment[0], toLowerCaseСomment[0].toUpperCase());
