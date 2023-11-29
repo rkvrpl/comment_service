@@ -24,7 +24,7 @@ const addTextOnChat = () =>{
     const checkSpamComment = checkSpam(correctСomment);
 
     resultName.textContent = correctName; 
-    resultImg.elem.setAttribute('src', 'correctFoto'); 
+    resultImg.src = correctFoto; 
     resultComment.textContent = checkSpamComment;
 };
 

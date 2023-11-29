@@ -15,14 +15,14 @@
         <div class="conteiner">
             <section>
                 <h2 class="title">Оставьте ваш комментарий</h2>
-                <form class="form">
+                <form class="form" onsubmit="return false;">
                     <div class="form__section">
                         <label for="userName">Введите ваше имя:</label><br />
                         <input class="form__window" id="userName" name="name" type="text" autocomplete="on"  placeholder="Ваше имя"/>
                     </div> 
                     <div class="form__section">  
                         <label for="foto">Введите ссылку на ваш аватар:</label><br />
-                        <input class="form__window" id="foto" name="foto" type="file" autocomplete="on"  placeholder="Ссылка на фото"/>
+                        <input class="form__window" id="foto" name="foto" type="url" autocomplete="on" />
                     </div>
                     <div class="form__section">
                         <label for="comment">Оставьте комментарий:</label><br />
