@@ -16,8 +16,11 @@
             <section>
                 <h2 class="title">Оставьте ваш комментарий</h2>
                 <form class="form" onsubmit="return false;">
+                    <label for="radio">Показывать ваше имя?</label><br />
+                        <label>Да<input type="radio" name="radio" id="yes" value="yes"/></label>
+                        <label>Нет<input type="radio" name="radio" id="no" value="no"/></label>
                     <div class="form__section">
-                        <label for="userName">Введите ваше имя:</label><br />
+                        <label id="userNameLabel"for="userName">Введите ваше имя:</label><br />
                         <input class="form__window" id="userName" name="name" type="text" autocomplete="on"  placeholder="Ваше имя"/>
                     </div> 
                     <div class="form__section">  
